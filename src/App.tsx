@@ -20,7 +20,7 @@ export default function App() {
       {/* Slide 1: Cover Page */}
       <Cover
         nav="Cover"
-        notes="Welcome judges and builders to DemoDominator. Built for the Google Cloud & Devpost 'All Things Agentic' Hackathon in the Taskmaster Track by Dorien Van den Abbeele. DemoDominator transforms any live web or mobile URL into studio-grade 4K product walkthroughs and automated 5-Pillar Google Video SEO packages in under 25 seconds for less than 1 cent."
+        notes="Welcome judges and builders to DemoDominator. Built for the Google Cloud & Devpost 'All Things Agentic' Hackathon in the Taskmaster Track by Dorien Van den Abbeele. DemoDominator is not just another screen recorder—it is an autonomous Video SEO and GEO engine that transforms any live web or mobile URL into studio-grade 4K product walkthroughs and complete Google Video SEO packages in under 25 seconds for less than 1 cent."
         kicker="Google Cloud 'All Things Agentic' Hackathon · Taskmaster Track"
         title={
           <>
@@ -34,25 +34,25 @@ export default function App() {
       {/* Slide 2: The Problem (Contrast) */}
       <Contrast
         nav="The Problem"
-        notes="Why did we build this? Every SaaS founder and developer knows that static screenshots have poor conversion, while recording video walkthroughs is excruciatingly slow, expensive, and fragile. You spend 5 days scripting, recording re-takes, syncing voice tracks, and transcribing captions, only for the video to remain invisible to search engines without structured schema. DemoDominator executes the entire lifecycle autonomously in 25 seconds."
-        kicker="The $10,000 SaaS Demo Dilemma"
-        title="Manual screencasts are slow, expensive, and invisible to search."
+        notes="Most builders already use video tools like Loom, OBS, or Screen Studio. But standard recorders only capture raw pixels—they leave your video completely invisible to search engines with zero structured schema. Recording retakes, syncing audio, and transcribing captions is still manual work. DemoDominator stands apart because it is fundamentally a Video SEO engine: it autonomously navigates your live app, records the walkthrough, and packages it with structured VideoObject schema, key moments, sitemaps, and llms.txt for instant Google and AI search ranking."
+        kicker="Beyond Standard Screen Recorders"
+        title="Standard recorders capture pixels. DemoDominator delivers ranked Video SEO."
         left={{
-          label: "Manual Video Production",
-          title: "5-Day Manual Grind",
+          label: "Standard Video Recorders",
+          title: "Manual Recording & Zero SEO",
           points: [
-            "Manual 3-act scriptwriting and storyboard drafting",
-            "Dozens of screen retakes due to cursor stutters & typos",
-            "Costly voice actors or manual timeline audio alignment",
-            "Zero Google VideoObject Schema or search discoverability",
-            "High bounce rates from silent autoplay on mobile feeds"
+            "Multiple manual screen takes & retakes for every update",
+            "Manual timeline editing & cut-away adjustments",
+            "Manual subtitle transcription & formatting",
+            "Zero Google VideoObject Schema or Key Moments",
+            "Invisible to Google Search & AI engines (Perplexity/Gemini)"
           ]
         }}
         right={{
           label: "With DemoDominator",
-          title: "25s Autonomous Pipeline",
+          title: "Autonomous Pipeline + Full SEO",
           points: [
-            "Autonomous DOM leaf-node discovery & action planning",
+            "Autonomous DOM leaf-node discovery & kinetic directing",
             "Gemini 3.7 Flash 3-act storyboarding with Pydantic schemas",
             "Calibrated neural voice synthesis with millisecond audio sync",
             "Complete 5-Pillar Video SEO & GEO suite (Schema + llms.txt)",
@@ -66,7 +66,7 @@ export default function App() {
         nav="Agent Pipeline"
         notes="This is our 6-phase autonomous agent pipeline running inside Google Antigravity SDK. From the moment a URL is entered, the agent inspects the live DOM, plans the 3-act journey with Gemini 3.7 Flash, synthesizes voiceovers, directs the headless browser over CDP, multiplexes the video in memory, and generates the full SEO package."
         kicker="Autonomous Orchestration"
-        title="The 6-Phase End-to-End Agent Pipeline."
+        title="From URL to Ranked Video SEO in 6 Autonomous Phases."
         items={[
           {
             title: "1. DOM Leaf-Node Walker",
@@ -200,7 +200,7 @@ async def multiplex_walkthrough_stream(
       {/* Slide 7: 5-Pillar SEO & GEO Dominance (StatGrid) */}
       <StatGrid
         nav="5-Pillar SEO"
-        notes="Rendering a video is only half the battle — distribution is what matters. Every generation outputs our complete 5-Pillar Video SEO and GEO Suite: VideoObject Schema with Key Moments clips for +41% Google CTR, Dwell Time Maximizer widget for 2.6x on-page engagement, and token-efficient llms.txt markdown for AI search grounding."
+        notes="Here is what truly sets DemoDominator apart from standard screen recorders: the 5-Pillar Video SEO and GEO Suite. Video without SEO is invisible. Every generation automatically outputs VideoObject Schema with Key Moments clips for +41% Google CTR, Dwell Time Maximizer widget for 2.6x on-page engagement, and token-efficient llms.txt markdown for AI search grounding."
         kicker="Organic Video Distribution"
         title="The 5-Pillar Video SEO & GEO Dominance Suite."
         stats={[
@@ -226,7 +226,7 @@ async def multiplex_walkthrough_stream(
       <Slide
         center
         nav="Competitive Matrix"
-        notes="Comparing DemoDominator against Loom, Screen Studio, Screenity, and generic LLM chatbots. Traditional screen recorders require manual human operation and provide zero SEO packaging. Generic LLMs cannot act in real web DOMs or render video. DemoDominator unites autonomous acting, kinetic recording, neural voice, and complete SEO distribution."
+        notes="Comparing DemoDominator against Loom, Screen Studio, Screenity, and generic LLMs. Standard screen recorders only capture raw pixels and provide zero SEO packaging. Generic LLMs cannot act in real web DOMs or render video. DemoDominator unites autonomous acting, kinetic recording, neural voice, and complete Video SEO distribution."
       >
         <Reveal>
           <div className="kicker" style={{ marginBottom: 10 }}>
@@ -264,7 +264,11 @@ async def multiplex_walkthrough_stream(
               values: [true, 'Paid / Slow', 'Manual', false]
             },
             {
-              label: '5-Pillar Video SEO & llms.txt',
+              label: '5-Pillar Video SEO & Schema',
+              values: [true, false, false, false]
+            },
+            {
+              label: 'AI Search Grounding (llms.txt)',
               values: [true, false, false, false]
             },
             {
